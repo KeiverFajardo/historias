@@ -1,0 +1,7 @@
+{
+  "name": "myApp_historia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
