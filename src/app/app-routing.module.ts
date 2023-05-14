@@ -4,13 +4,31 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'form',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'form',
+    loadChildren: () => import('./pages/form/form.module').then( m => m.FormPageModule)
+  },
+  {
+    path: 'form-contact',
+    loadChildren: () => import('./pages/form-contact/form-contact.module').then( m => m.FormContactPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
   }
+
+
+
 ];
 
 @NgModule({
