@@ -2,3 +2,8 @@
   margin-bottom: 24px;
   margin-top: 16px; /* Margen inferior entre elementos */
 }
+
+ion-textarea {
+  height: auto;
+  overflow-y: hidden;
+}

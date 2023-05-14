@@ -1,8 +1,47 @@
-<app-header titulo="Personas"></app-header>
+<app-header titulo="Historias"></app-header>
 
 <ion-content>
 
-  <ion-list>
+    <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="6" size-lg="4" size-md="4" size-sm="4">
+            <ion-card>
+                <img src="../../../assets/1.jpg" style="border-radius: 10px; border: 2px solid #ccc;">
+                <ion-card-header>
+                  <ion-card-title>Título del card</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Contenido del card.
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+          <ion-col size="6" size-lg="4" size-md="4" size-sm="4">
+            <ion-card>
+                <img src="../../../assets/1.jpg" style="border-radius: 10px; border: 2px solid #ccc;">
+                <ion-card-header>
+                  <ion-card-title>Título del card</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Contenido del card.
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+          <ion-col size="6" size-lg="4" size-md="4" size-sm="4">
+            <ion-card>
+                <img src="../../../assets/1.jpg" style="border-radius: 10px; border: 2px solid #ccc;">
+                <ion-card-header>
+                  <ion-card-title>Título del card</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Contenido del card.
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+  <!-- <ion-list>
 
     <ion-item-sliding *ngFor="let user of usuarios | async">
 
@@ -35,7 +74,7 @@
 
 
       
-  </ion-list>
+  </ion-list> -->
 
 
 </ion-content>

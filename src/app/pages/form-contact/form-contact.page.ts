@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { NavController } from '@ionic/angular';
+import { IonTextarea, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-form-contact',
@@ -9,10 +9,23 @@ import { NavController } from '@ionic/angular';
 })
 export class FormContactPage implements OnInit {
 
+  customCounterFormatter(inputLength: number, maxLength: number) {
+    return `${maxLength - inputLength} characters remaining`;
+  }
+  
+  @ViewChild(IonTextarea) textarea!: IonTextarea;
+
   usuario = { 
     nombre : '',
     email: '',
-    tlf: ''
+    tlf: '',
+    mensaje : ''
+  }
+
+  async onInput() {
+    const element = await this.textarea.getInputElement();
+    element.style.height = 'auto';
+    element.style.height = element.scrollHeight + 'px';
   }
 
   constructor(private navCtrl: NavController) { }
