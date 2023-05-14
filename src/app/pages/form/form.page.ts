@@ -17,6 +17,7 @@ export class FormPage implements OnInit {
 
   async presentAlertMultipleButtons() {
     const alert = await this.alertCtrl.create({
+      backdropDismiss : false,
       header: '¿Tienes una historia para contar?',
       buttons: [
         {
