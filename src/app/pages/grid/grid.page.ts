@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonList, NavController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 import { DataService } from 'src/app/services/data.service';
+import { personas } from 'src/assets/data/personas';
 
 @Component({
   selector: 'app-grid',
@@ -10,7 +11,7 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class GridPage implements OnInit {
 
-  usuarios!: Observable<any>;
+  usuarios!: any[];
 
   @ViewChild(IonList) ionList!: IonList;
 
@@ -19,14 +20,12 @@ export class GridPage implements OnInit {
               private navCtrl: NavController) { }
 
   ngOnInit() {
-
-    this.usuarios = this.dataService.getUsuarios();
-
+    this.usuarios = personas;
   }
 
   onClick(user : any){
     console.log(user)
-    this.navCtrl.navigateRoot('/card');
+    this.navCtrl.navigateRoot('/card/' + user.id);
 
   }
 

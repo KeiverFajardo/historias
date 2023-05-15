@@ -1,43 +1,77 @@
-<app-header titulo="card"></app-header>
+<app-header titulo="{{this.usuario.name}}"></app-header>
 
 <ion-content>
 
-  <ion-card mode="ios">
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+  <ion-grid style="background-color: #EBCE6A;">
+
   
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
+  <ion-card mode="md">
+    <div class="container">
+      <div class="half left"><img src="{{this.usuario.avatar}}"></div>
+      <div class="half right">
+        <ion-card-header>
+          <ion-card-subtitle>{{this.usuario.age}}</ion-card-subtitle>
+          <ion-card-title>{{this.usuario.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{this.usuario.summary}}  
+        </ion-card-content>
+      </div>
+    </div>
   </ion-card>
 
 
 
 
   <ion-card>
-    <ion-item color="primary">
-      <ion-icon slot="start" name="pin-outline"></ion-icon>
-      <ion-label>Marcador</ion-label>
+    <ion-item color="{{this.usuario.colorconcept1}}">
+      <ion-icon slot="start" name="{{this.usuario.iconconcept1}}"></ion-icon>
+      <ion-label>{{this.usuario.concept1}}</ion-label>
     </ion-item>
     
     <ion-card-content>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit laboriosam et vel commodi aspernatur enim incidunt vitae necessitatibus voluptatem, repellendus nostrum quisquam? Minus consectetur mollitia nihil itaque ut vero sint!
+      {{this.usuario.description1}}
     </ion-card-content>
+    <img src="{{this.usuario.photo1}}">
+
 
   </ion-card>
-
 
   <ion-card>
-    <img src="https://cdn1-www.comingsoon.net/assets/uploads/2019/03/D0yW54OU4AAKCB1.jpg">
-
+    <ion-item color="{{this.usuario.colorconcept2}}">
+      <ion-icon slot="start" name="{{this.usuario.iconconcept2}}"></ion-icon>
+      <ion-label>{{this.usuario.concept2}}</ion-label>
+    </ion-item>
+    
     <ion-card-content>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit laboriosam et vel commodi aspernatur enim incidunt vitae necessitatibus voluptatem, repellendus nostrum quisquam? Minus consectetur mollitia nihil itaque ut vero sint!
+      {{this.usuario.description2}}
     </ion-card-content>
-
+    <img src="{{this.usuario.photo2}}">
   </ion-card>
 
+  <ion-card>
+    <ion-item color="{{this.usuario.colorconcept3}}">
+      <ion-icon slot="start" name="{{this.usuario.iconconcept3}}"></ion-icon>
+      <ion-label>{{this.usuario.concept3}}</ion-label>
+    </ion-item>
+    
+    <ion-card-content>
+      {{this.usuario.description3}}
+    </ion-card-content>
+    <img src="{{this.usuario.photo3}}">
+  </ion-card>
+
+  <ion-card>
+    <ion-item color="{{this.usuario.colorconcept4}}">
+      <ion-icon slot="start" name="{{this.usuario.iconconcept4}}"></ion-icon>
+      <ion-label>{{this.usuario.concept4}}</ion-label>
+    </ion-item>
+    
+    <ion-card-content>
+      {{this.usuario.description4}}
+    </ion-card-content>
+    <img src="{{this.usuario.photo4}}">
+  </ion-card>
+  </ion-grid>
 
 </ion-content>

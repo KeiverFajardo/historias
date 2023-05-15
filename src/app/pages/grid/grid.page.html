@@ -2,43 +2,34 @@
 
 <ion-content>
 
-    <ion-grid>
-        <ion-row class="ion-justify-content-center">
-          <ion-col size="6" size-lg="4" size-md="4" size-sm="4">
-            <ion-card>
-                <img src="../../../assets/1.jpg" style="border-radius: 10px; border: 2px solid #ccc;">
-                <ion-card-header>
-                  <ion-card-title>Título del card</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                  Contenido del card.
-                </ion-card-content>
-              </ion-card>
-          </ion-col>
-          <ion-col size="6" size-lg="4" size-md="4" size-sm="4">
-            <ion-card>
-                <img src="../../../assets/1.jpg" style="border-radius: 10px; border: 2px solid #ccc;">
-                <ion-card-header>
-                  <ion-card-title>Título del card</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                  Contenido del card.
-                </ion-card-content>
-              </ion-card>
-          </ion-col>
-          <ion-col size="6" size-lg="4" size-md="4" size-sm="4">
-            <ion-card>
-                <img src="../../../assets/1.jpg" style="border-radius: 10px; border: 2px solid #ccc;">
-                <ion-card-header>
-                  <ion-card-title>Título del card</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                  Contenido del card.
-                </ion-card-content>
-              </ion-card>
+    <ion-grid >
+        <ion-row class="ion-justify-content-center" >
+          <ion-col size="6" size-lg="4" size-md="4" size-sm="4"
+                  *ngFor="let user of usuarios" >
+            <ion-card (click)="onClick(user)" style="background-color: #EBCE6A !important;">
+              <ion-card-content>
+              <div class="container" >
+                <div class="half top">
+                  <ion-card-header>
+                    <ion-card-subtitle>{{ user.name }}</ion-card-subtitle>
+                  </ion-card-header>
+                  <!-- <ion-label>{{ user.name }}</ion-label> -->
+                  <ion-img [src]="user.avatar"></ion-img>
+                </div>
+                <div class="half bottom">
+                  <ion-label>{{ user.summary }}</ion-label>
+                   <!--  <p>{{ user.summary }}</p> -->
+                  
+                </div>
+              </div>
+            </ion-card-content>
+                <!-- <img [src]="user.avatar" style="border-radius: 10px; border: 2px solid #ccc;">
+                 -->
+                
+            </ion-card>
           </ion-col>
         </ion-row>
-      </ion-grid>
+    </ion-grid>
 
 
   <!-- <ion-list>

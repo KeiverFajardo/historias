@@ -25,15 +25,22 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+*{
+    //background-color: #BC7C53;
+}
+
 .rojo {
     color : red !important;
 }
 
-//#EBCE6A
-//#F2B409
-//#F28C0F
-//#BC7C53
-//#A56339
+.colocor {
+    color : #EBCE6A ;
+    color : #F2B409 ;
+    color : #F28C0F ;
+    color : #BC7C53 ;
+    color : #A56339 ;
+} 
+
 
 /* .bg-image {
     background-image: url('../src/assets/tr3.png');

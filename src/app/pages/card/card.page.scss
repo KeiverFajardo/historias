@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+  }
+  
+  .half {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .left {
+    width: 50%;
+  }
+  
+  .right {
+    width: 50%;
+  }

@@ -1,6 +1,25 @@
 ion-col {
-    background-color: #135d54;
+    background-color: none;
     border: solid 1px #fff;
     color: #fff;
     text-align: center;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Altura del contenedor principal */
+  }
+  
+  .half {
+    box-sizing: border-box;
+  }
+  
+  .top {
+    flex: 1; /* Abarca la mitad superior */
+  }
+  
+  .bottom {
+    flex: 1; /* Abarca la mitad inferior */
+  }
+  
