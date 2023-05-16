@@ -1,4 +1,4 @@
-[
+export const menu = [
     {
       "icon": "people-outline",
       "name": "Historias",

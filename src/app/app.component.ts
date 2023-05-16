@@ -3,6 +3,7 @@ import { DataService } from './services/data.service';
 import { Platform } from '@ionic/angular';
 import { Componente } from './interfaces/interfaces';
 import { Observable } from 'rxjs';
+import { menu } from 'src/assets/data/menu';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -10,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   
-  componentes?: Observable<Componente[]>;
+  componentes?: Componente[];
 
   constructor(
     private platform: Platform,
@@ -25,7 +26,7 @@ export class AppComponent {
     this.platform.ready().then(() => {
 /*       this.statusBar.styleDefault();
       this.splashScreen.hide(); */
-      this.componentes = this.dataService.getMenuOpts();
+      this.componentes = menu;
     });
   }
 

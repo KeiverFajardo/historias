@@ -11,7 +11,7 @@
         
         <ion-list>
   
-          <ion-menu-toggle *ngFor="let c of componentes | async" 
+          <ion-menu-toggle *ngFor="let c of componentes" 
                            autoHide="false">
             <ion-item [routerLink]="c.redirectTo"
                       detail style="background-color: #BC7C53 !important;">
