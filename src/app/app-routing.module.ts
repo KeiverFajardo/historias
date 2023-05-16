@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'proximamente',
+    loadChildren: () => import('./pages/proximamente/proximamente.module').then( m => m.ProximamentePageModule)
   }
 
 

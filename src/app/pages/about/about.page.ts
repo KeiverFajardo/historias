@@ -41,4 +41,7 @@ export class AboutPage implements OnInit {
     this.navCtrl.navigateRoot('/home');
   }
 
+  onClick(){
+    this.navCtrl.navigateRoot('/proximamente');
+  }
 }

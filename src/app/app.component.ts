@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { DataService } from './services/data.service';
 import { Platform } from '@ionic/angular';
 import { Componente } from './interfaces/interfaces';
-import { Observable } from 'rxjs';
 import { menu } from 'src/assets/data/menu';
 @Component({
   selector: 'app-root',

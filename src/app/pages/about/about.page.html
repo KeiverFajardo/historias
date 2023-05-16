@@ -2,26 +2,52 @@
 
 <ion-content >
   <div class="background">
-    <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)">
 
       <ion-list-header>
-        <ion-label>Nosotros somos UDELAR</ion-label>
+        <ion-label class="ion-text-center">Nosotros somos UDELAR</ion-label>
       </ion-list-header>
-  
-      <ion-item class="my-item">
-        <ion-label>Escribe algo: </ion-label>
-        <ion-input type="text"
-                   name="nombre"
-                   [(ngModel)]="usuario.nombre"
-                   required></ion-input>
-      </ion-item>
-  
-      <ion-button [disabled]="formulario.invalid"
-                  type="submit" expand="block" class="my-item">
-        Enviar
-      </ion-button>
-  
-    </form>  
+      
+      <img src="https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/Udelar.jpg">
+      
+
+      <ion-list-header>
+        <ion-label>¿Necesitas ayuda?</ion-label>
+      </ion-list-header>
+        <ion-label class="my-item">Estos son los medios por los cuales te puedes comunicar con nosotros:</ion-label>
+      <ion-list-header>
+        <ion-label>Medios de contacto</ion-label>
+        
+      </ion-list-header>
+      <ion-chip color="light" mode="ios" outline="true" (click)="onClick()">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-label>info@historiasReales@gmail.com</ion-label>
+      </ion-chip>
+      <ion-chip color="light" mode="ios" outline="true" (click)="onClick()">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <ion-label>097 397 077</ion-label>
+      </ion-chip>
+      <ion-chip color="light" mode="ios" outline="true" (click)="onClick()">
+        <ion-icon name="call-outline"></ion-icon>
+        <ion-label>097 397 077</ion-label>
+      </ion-chip>
+      
+
+      <ion-list-header>
+        <ion-label>Redes Sociales</ion-label>
+      </ion-list-header>
+      <ion-chip color="light" mode="ios" outline="true" (click)="onClick()">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-label>Facebook</ion-label>
+      </ion-chip>
+      <ion-chip color="light" mode="ios" outline="true" (click)="onClick()">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-label>Instagram</ion-label>
+      </ion-chip>
+      <ion-chip color="light" mode="ios" outline="true" (click)="onClick()">
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-label>Linkedin</ion-label>
+      </ion-chip>
+      
 </div>
 
 
