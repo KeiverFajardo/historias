@@ -41,7 +41,7 @@ export const personas = [
         "id":"2",
         "name":"Brek Pita", 
         "age":"29 años", 
-        "avatar":"https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/brek1.jpg",
+        "avatar":"https://github.com/KeiverFajardo/historias/raw/main/src/assets/photos/DSC_1302.NEF",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit elit.",
         "colorconcept1":"secondary",
         "iconconcept1":"accessibility-outline",
