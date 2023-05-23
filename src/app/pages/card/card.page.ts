@@ -11,22 +11,22 @@ import { personas } from 'src/assets/data/personas';
 export class CardPage implements OnInit, AfterViewInit  {
 
   ngAfterViewInit() {
-    const swiper = new Swiper('.swiper-container', {
+    const swiper1 = new Swiper('.carrusel-1', {
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.carrusel-1-next',
+        prevEl: '.carrusel-1-prev',
       },
     });
 
-    const nextButton = document.querySelector('.swiper-button-next');
-    const prevButton = document.querySelector('.swiper-button-prev');
+    const nextButton = document.querySelector('.carrusel-1-next');
+    const prevButton = document.querySelector('.carrusel-1-prev');
 
     nextButton!.addEventListener('click', () => {
-      swiper.slideNext();
+      swiper1.slideNext();
     });
 
     prevButton!.addEventListener('click', () => {
-      swiper.slidePrev();
+      swiper1.slidePrev();
     });
 
     //Carrucel 2

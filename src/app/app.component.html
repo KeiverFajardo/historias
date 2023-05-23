@@ -2,7 +2,7 @@
   <ion-split-pane contentId="main">
     
     <ion-menu side="start" menuId="first" contentId="main">
-      <ion-header>
+      <ion-header >
         <ion-toolbar color="warning">
           <ion-title>Menú</ion-title>
         </ion-toolbar>
@@ -15,7 +15,7 @@
                            autoHide="false">
             <ion-item [routerLink]="c.redirectTo"
                       detail style="background-color: #BC7C53 !important;">
-              <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+              <ion-icon [name]="c.icon" slot="start" color="warning"></ion-icon>
               {{ c.name }}
             </ion-item>
           </ion-menu-toggle>

@@ -9,7 +9,7 @@
       <div class="half right">
         <ion-card-header>
           <ion-card-subtitle>{{this.usuario.age}}</ion-card-subtitle>
-          <ion-card-title>{{this.usuario.name}}</ion-card-title>
+          <ion-card-title style="color:rgb(221, 221, 48)">{{this.usuario.name}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
           {{this.usuario.summary}}  
@@ -20,17 +20,17 @@
 
   <ion-card>
     <ion-card-content>
-      <p class="justified-text">{{this.usuario.history1}}</p>
-      <p class="justified-text">{{this.usuario.history2}}</p>
-      <p class="justified-text">{{this.usuario.history3}}</p>
-      <p class="justified-text">{{this.usuario.history4}}</p>
-      <p class="justified-text">{{this.usuario.history5}}</p>
-      <p class="justified-text">{{this.usuario.history6}}</p>
-      <p class="justified-text">{{this.usuario.history7}}</p>
-      <p class="justified-text">{{this.usuario.history8}}</p>
-      <p class="justified-text">{{this.usuario.history9}}</p>
-      <p class="justified-text">{{this.usuario.history10}}</p>
-      <p class="justified-text">{{this.usuario.history11}}</p>
+      <p class="justified-text">{{this.usuario.history1}}</p><br>
+      <p class="justified-text">{{this.usuario.history2}}</p><br>
+      <p class="justified-text">{{this.usuario.history3}}</p><br>
+      <p class="justified-text">{{this.usuario.history4}}</p><br>
+      <p class="justified-text">{{this.usuario.history5}}</p><br>
+      <p class="justified-text">{{this.usuario.history6}}</p><br>
+      <p class="justified-text">{{this.usuario.history7}}</p><br>
+      <p class="justified-text">{{this.usuario.history8}}</p><br>
+      <p class="justified-text">{{this.usuario.history9}}</p><br>
+      <p class="justified-text">{{this.usuario.history10}}</p><br>
+      <p class="justified-text">{{this.usuario.history11}}</p><br>
 
     </ion-card-content>
   </ion-card>
@@ -42,7 +42,7 @@
     </ion-item>
     
     <ion-card-content>
-      <div class="swiper-container">
+      <div class="swiper-container carrusel-1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="{{this.usuario.photo1}}">
@@ -63,8 +63,8 @@
           
         </div>
         <!-- Agrega las flechas de navegación del carrusel -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next carrusel-1-next"></div>
+          <div class="swiper-button-prev carrusel-1-prev"></div>
       </div>
       <!-- {{this.usuario.description1}} -->
     </ion-card-content>
@@ -129,7 +129,7 @@
             <img src="{{this.usuario.photo13}}">
           </div>
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo14}}">
+            <img src="{{this.usuario.photo16}}">
           </div>
           <div class="swiper-slide">
             <img src="{{this.usuario.photo15}}">

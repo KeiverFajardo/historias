@@ -25,3 +25,15 @@ ion-grid, ion-card{
 ion-card-title{
     color: aliceblue;
 }
+
+ion-content, ion-grid{
+    width: 100%;
+    height:70%;
+}
+
+app-footer {
+    position: fixed;
+    bottom: 0;
+    height:30%;
+    width: 100%;
+  }

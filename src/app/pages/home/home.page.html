@@ -1,12 +1,34 @@
 <app-header titulo="Historias reales sobre personas reales"></app-header>
 
   <ion-content >
-    <ion-button class="full"  expand="full" fill="clear" shape="round">
-      <ion-button color="warning" (click)="onClick()" expand="block">
-        HISTORIAS
+    <ion-grid >
+      
+    <div class="swiper-container carrusel-1 container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../../../assets/h1.jpeg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../../../assets/h2.jpeg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../../../assets/h3.jpeg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../../../assets/h4.jpeg">
+        </div>
         
+      </div>
+      
+        <div class="swiper-button-next carrusel-1-next" ></div>
+        <div class="swiper-button-prev carrusel-1-prev"></div>
+    </div>
+    <div class="button-container">
+      <ion-button   expand="full" fill="clear" shape="round" color="warning" (click)="onClick()" size="default" >
+          HISTORIAS
       </ion-button>
-     </ion-button>
+    </div>
+    </ion-grid>
+    <app-footer></app-footer>
   </ion-content>
 
-<app-footer></app-footer>
