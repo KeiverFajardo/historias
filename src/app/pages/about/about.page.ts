@@ -9,6 +9,11 @@ import { NgForm } from '@angular/forms';
 })
 export class AboutPage implements OnInit {
 
+  items = [
+    { avatarUrl: '../../../', label: 'Etiqueta 1' },
+    { avatarUrl: 'ruta-del-avatar-2.jpg', label: 'Etiqueta 2' },
+    { avatarUrl: 'ruta-del-avatar-3.jpg', label: 'Etiqueta 3' },
+  ];
   
   customCounterFormatter(inputLength: number, maxLength: number) {
     return `${maxLength - inputLength} characters remaining`;

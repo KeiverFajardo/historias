@@ -46,6 +46,23 @@
         <ion-icon name="logo-linkedin"></ion-icon>
         <ion-label>Linkedin</ion-label>
       </ion-chip>
+
+      <ion-list-header>
+        <ion-label>Nosotros</ion-label>
+      </ion-list-header>
+
+      <ion-slides>
+        <ion-slide *ngFor="let item of items">
+          <ion-card>
+            <ion-card-header>
+              <ion-avatar slot="start">
+                <img src="{{item.avatarUrl}}">
+              </ion-avatar>
+              <ion-card-title>{{item.label}}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
       
   </ion-grid>
 
