@@ -29,3 +29,24 @@
   .justified-text {
     text-align: justify;
   }
+
+  //Carrusel
+  .swiper-container, .swiper-container2, .swiper-container3, .swiper-container4 {
+    width: auto;
+    height: auto;
+  }
+  
+  .swiper-slide, .swiper-slide2, .swiper-slide3, .swiper-slide4 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      max-width: auto;
+      max-height: auto;
+    }
+  }
+  
