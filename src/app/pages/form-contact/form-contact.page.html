@@ -1,7 +1,7 @@
 <app-header titulo="Contacto"></app-header>
 
 <ion-content >
-  <div class="background">
+  <ion-grid>
     <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)">
 
       <ion-list-header>
@@ -42,7 +42,6 @@
                    name="mensaje"
                    [(ngModel)]="usuario.mensaje"
                    required
-                   [autoGrow]="true"
                    placeholder="Quiero contar mi historia, estoy disponible de lunes a viernes"
                    [counter]="true"
                     maxlength="150"
@@ -57,7 +56,8 @@
       </ion-button>
   
     </form>  
-</div>
+  </ion-grid>
 
-
+  <app-footer></app-footer>
 </ion-content>
+

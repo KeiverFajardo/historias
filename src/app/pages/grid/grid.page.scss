@@ -23,3 +23,21 @@ ion-col {
     flex: 1; /* Abarca la mitad inferior */
   }
   
+  ion-grid{
+    background-color: rgb(51, 50, 50);
+    color: aliceblue;
+    width: 100%;
+    height:auto;
+  }
+  
+  
+  app-footer {
+    position: fixed;
+    bottom: 0;
+    height:auto;
+    width: 100%;
+  }
+  
+  ion-label, ion-card, ion-col{
+    color: aliceblue;
+  }

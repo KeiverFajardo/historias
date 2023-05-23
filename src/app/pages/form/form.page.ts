@@ -22,6 +22,7 @@ export class FormPage implements OnInit {
       buttons: [
         {
           text: 'Si',
+          cssClass: 'blanco',
           handler: () => {
             this.navCtrl.navigateRoot('/form-contact');
             console.log('click en ok!')
@@ -30,7 +31,7 @@ export class FormPage implements OnInit {
         {
           text: 'No',
           role: 'cancel',
-          cssClass: 'rojo',
+          cssClass: 'blanco',
           handler: () => {
             this.navCtrl.navigateRoot('/home');
             console.log('click en No!')
