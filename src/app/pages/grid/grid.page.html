@@ -3,35 +3,23 @@
 <ion-content>
 
     <ion-grid >
-        <ion-row class="ion-justify-content-center" >
-          <ion-col size="12" size-lg="6" size-md="6" size-sm="6"
-                  *ngFor="let user of usuarios" >
-            <ion-card (click)="onClick(user)" >
-              <ion-card-content>
-              <div class="container" >
-                <div class="half top">
-                  <ion-card-header>
-                    <ion-card-subtitle>{{ user.name }}</ion-card-subtitle>
-                  </ion-card-header>
-                  <!-- <ion-label>{{ user.name }}</ion-label> -->
-                  <ion-img [src]="user.avatar"></ion-img>
-                </div>
-                <div class="half bottom">
-                  <ion-label>{{ user.summary }}</ion-label>
-                   <!--  <p>{{ user.summary }}</p> -->
-                  
-                </div>
-              </div>
+      <ion-card mode="md" *ngFor="let usuario of usuarios" (click)="onClick(usuario)">
+        <div class="container">
+          <div class="half left"><img src="{{this.usuario.avatar}}"></div>
+          <div class="half right">
+            <ion-card-header>
+              <ion-card-subtitle>{{this.usuario.age}}</ion-card-subtitle>
+              <ion-card-title>{{this.usuario.name}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{this.usuario.summary}}  
             </ion-card-content>
-                <!-- <img [src]="user.avatar" style="border-radius: 10px; border: 2px solid #ccc;">
-                 -->
-                
-            </ion-card>
-          </ion-col>
-        </ion-row>
+          </div>
+        </div>
+      </ion-card>
     </ion-grid>
 
+    <app-footer></app-footer>
 
 </ion-content>
 
-<app-footer></app-footer>

@@ -1,43 +1,27 @@
-ion-col {
-    background-color: none;
-    border: solid 1px #fff;
-    color: #fff;
-    text-align: center;
-  }
-
-  .container {
+.container {
     display: flex;
-    flex-direction: column;
-    height: 100%; /* Altura del contenedor principal */
-  }
+}
   
-  .half {
+.half {
+    height: 100%;
     box-sizing: border-box;
-  }
+}
   
-  .top {
-    flex: 1; /* Abarca la mitad superior */
-  }
+.left {
+    width: 50%;
+}
   
-  .bottom {
-    flex: 1; /* Abarca la mitad inferior */
-  }
-  
-  ion-grid{
+.right {
+    width: 50%;
+}
+
+ion-grid, ion-card{
     background-color: rgb(51, 50, 50);
     color: aliceblue;
-    width: 100%;
-    height:auto;
-  }
-  
-  
-  app-footer {
-    position: fixed;
-    bottom: 0;
-    height:auto;
-    width: 100%;
-  }
-  
-  ion-label, ion-card, ion-col{
+    width: auto;
+    height: auto;
+}
+
+ion-card-title{
     color: aliceblue;
-  }
+}

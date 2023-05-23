@@ -14,3 +14,14 @@
   .right {
     width: 50%;
   }
+
+  ion-grid, ion-card{
+    background-color: rgb(51, 50, 50);
+    color: aliceblue;
+    width: auto;
+    height: auto;
+  }
+
+  ion-card-title{
+    color: aliceblue;
+  }
