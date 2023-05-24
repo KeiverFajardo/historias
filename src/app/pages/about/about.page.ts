@@ -1,18 +1,39 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { IonTextarea, NavController } from '@ionic/angular';
 import { NgForm } from '@angular/forms';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.page.html',
   styleUrls: ['./about.page.scss'],
 })
-export class AboutPage implements OnInit {
+export class AboutPage implements OnInit, AfterViewInit {
+
+  ngAfterViewInit() {
+    const swiper1 = new Swiper('.carrusel-1', {
+      navigation: {
+        nextEl: '.carrusel-1-next',
+        prevEl: '.carrusel-1-prev',
+      },
+    });
+
+    const nextButton = document.querySelector('.carrusel-1-next');
+    const prevButton = document.querySelector('.carrusel-1-prev');
+
+    nextButton!.addEventListener('click', () => {
+      swiper1.slideNext();
+    });
+
+    prevButton!.addEventListener('click', () => {
+      swiper1.slidePrev();
+    });
+  }
 
   items = [
-    { avatarUrl: '../../../', label: 'Etiqueta 1' },
-    { avatarUrl: 'ruta-del-avatar-2.jpg', label: 'Etiqueta 2' },
-    { avatarUrl: 'ruta-del-avatar-3.jpg', label: 'Etiqueta 3' },
+    { avatarUrl: 'https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/I1.jpeg', label: 'Etiqueta 1' },
+    { avatarUrl: 'https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/I1.jpeg', label: 'Etiqueta 2' },
+    { avatarUrl: 'https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/I1.jpeg', label: 'Etiqueta 3' },
   ];
   
   customCounterFormatter(inputLength: number, maxLength: number) {
@@ -20,6 +41,8 @@ export class AboutPage implements OnInit {
   }
   
   @ViewChild(IonTextarea) textarea!: IonTextarea;
+  @ViewChild('slides') slides: any;
+
 
   usuario = { 
     nombre : '',
