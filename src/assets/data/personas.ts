@@ -55,7 +55,7 @@ export const personas = [
     },
     {
         "id":"2",
-        "name":"Breck Pita", 
+        "name":"Breck Soto", 
         "age":"47 años", 
         "avatar":"https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/breck.jpg",
         "summary": "Hombre de 47 años. Caracas, Venezuela. Barista. Emprendedor. Interés por la gastronomía",
