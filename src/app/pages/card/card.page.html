@@ -4,21 +4,19 @@
 
   <ion-grid>
   <ion-card mode="md">
-    <div class="container">
-      <div class="half left">
-        <img src="{{this.usuario.avatar}}">
-      </div>
+    <div class="container" style="padding: 20px 0 20px;">
+      <div class="half left"><img src="{{this.usuario.avatar}}"></div>
       <div class="half right">
         <ion-card-header>
           <ion-card-subtitle>{{this.usuario.age}}</ion-card-subtitle>
-          <ion-card-title style="color:#FEBD59">{{this.usuario.name}}</ion-card-title>
+          <ion-card-title style="color:#FEBD59" class="titulos">{{this.usuario.name}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <p>{{this.usuario.summary1}}</p>
-          <p>{{this.usuario.summary2}}</p>
-          <p>{{this.usuario.summary3}}</p>
-          <p>{{this.usuario.summary4}}</p>
-          <p>{{this.usuario.summary5}}</p>
+          <p style="font-size: 12px;">{{this.usuario.summary1}}</p>
+          <p style="font-size: 12px;">{{this.usuario.summary2}}</p>
+          <p style="font-size: 12px;">{{this.usuario.summary3}}</p>
+          <p style="font-size: 12px;">{{this.usuario.summary4}}</p>
+          <p style="font-size: 12px;">{{this.usuario.summary5}}</p>
         </ion-card-content>
       </div>
     </div>
@@ -57,6 +55,9 @@
       <div class="swiper-container carrusel-1">
         <div class="swiper-wrapper">
           <div class="swiper-slide" *ngIf="this.id == 1">
+            <iframe width="560" height="190" src="https://www.youtube.com/embed/YKGwSpLPmj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.familia1}}">
           </div>
           <div class="swiper-slide" *ngIf="this.id == 1">
@@ -69,11 +70,15 @@
             <img src="{{this.usuario.familia4}}">
           </div>
           <div class="swiper-slide" *ngIf="this.id == 2">
+            <iframe width="560" height="190" src="https://www.youtube.com/embed/lX4yJHhmnB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
             <img src="{{this.usuario.familia1}}">
           </div>
           <div class="swiper-slide" *ngIf="this.id == 2">
             <img src="{{this.usuario.familia2}}">
           </div>
+         
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
         </div>
@@ -100,6 +105,9 @@
     <ion-card-content>
       <div class="swiper-container carrusel-2">
         <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngIf="this.id == 1">
+            <iframe width="560" height="190" src="https://www.youtube.com/embed/kyAIpPhUD9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
           <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.amor1}}">
           </div>
@@ -143,6 +151,9 @@
       <div class="swiper-container carrusel-3">
         <div class="swiper-wrapper">
           <div class="swiper-slide" *ngIf="this.id == 1">
+            <iframe width="560" height="190" src="https://www.youtube.com/embed/O6_hcIF2oFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.trabajo1}}">
           </div>
           <div class="swiper-slide" *ngIf="this.id == 1">
@@ -156,6 +167,9 @@
           </div>
           <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.trabajo5}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <iframe width="560" height="190" src="https://www.youtube.com/embed/-WUFVwsxuQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div class="swiper-slide" *ngIf="this.id == 2">
             <img src="{{this.usuario.trabajo1}}">
@@ -216,7 +230,7 @@
             <img src="{{this.usuario.migracion4}}">
           </div>
           <div class="swiper-slide" *ngIf="this.id == 1">
-            <iframe width="560" height="300" src="https://www.youtube.com/embed/LcattmQHwvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="190" src="https://www.youtube.com/embed/WhVWqIgpdR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
