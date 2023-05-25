@@ -13,7 +13,7 @@ import { IonicSlides } from '@ionic/angular';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage {
-
+/* 
   images: string[] = [
     'https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b2.jpg',
     'https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b3.jpg',
@@ -33,7 +33,7 @@ export class HomePage {
       this.currentIndex = 0;
     }
   }
-
+ */
 
   /* slideOpts = {
     initialSlide: 0,

@@ -190,7 +190,7 @@ export default class WOW {
     if (!this.disabled()) {
       addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
       addEvent(window, 'resize', this.scrollHandler);
-      this.interval = setInterval(this.scrollCallback, 50);
+      this.interval = setInterval(this.scrollCallback, 30);
     }
     if (this.config.live) {
       const mut = new MutationObserver(records => {
