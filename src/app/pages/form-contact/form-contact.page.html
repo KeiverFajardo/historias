@@ -9,18 +9,18 @@
       </ion-list-header>
   
       <ion-item class="my-item">
-        <ion-label>Nombres y apellidos:</ion-label>
+        <ion-label class="titulos">Nombre</ion-label>
         <ion-input type="text" 
-                   placeholder="Maria Lola Plaza Perez"
+                   placeholder="Ingrese su nombre"
                    name="nombre"
                    [(ngModel)]="usuario.nombre"
                    required></ion-input>
       </ion-item>
   
       <ion-item class="my-item">
-        <ion-label>Correo Electrónico:</ion-label>
+        <ion-label class="titulos">Email</ion-label>
         <ion-input type="email" 
-                   placeholder="maria123@gmail.com"
+                   placeholder="Ingrese su email"
                    name="email"
                    [(ngModel)]="usuario.email"
                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
@@ -28,21 +28,21 @@
       </ion-item>
   
       <ion-item class="my-item">
-        <ion-label>Teléfono:</ion-label>
+        <ion-label class="forr">Celular</ion-label>
         <ion-input type="number" 
                    name="tlf"
                    [(ngModel)]="usuario.tlf"
                    required
-                   placeholder="099666333"></ion-input>
+                   placeholder="Ingrese su celular"></ion-input>
       </ion-item>
   
       <ion-item class="my-item">
-        <ion-label>Mensaje:</ion-label>
+        <ion-label class="titulos">Mensaje</ion-label>
         <ion-textarea
                    name="mensaje"
                    [(ngModel)]="usuario.mensaje"
                    required
-                   placeholder="Quiero contar mi historia, estoy disponible de lunes a viernes"
+                   placeholder="Contanos tu historia o la de un conocido"
                    [counter]="true"
                     maxlength="150"
                     [counterFormatter]="customCounterFormatter"

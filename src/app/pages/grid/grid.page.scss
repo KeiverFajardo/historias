@@ -1,6 +1,20 @@
 .container {
     display: flex;
 }
+
+.containerR {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Ancho del contenedor */
+    height: 100%; /* Alto del contenedor */
+  }
+  
+  .containerR img {
+    width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen no exceda el alto del contenedor */
+  }
+  
   
 .half {
     height: 100%;

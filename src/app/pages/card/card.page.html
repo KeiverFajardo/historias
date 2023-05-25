@@ -5,14 +5,20 @@
   <ion-grid>
   <ion-card mode="md">
     <div class="container">
-      <div class="half left"><img src="{{this.usuario.avatar}}"></div>
+      <div class="half left">
+        <img src="{{this.usuario.avatar}}">
+      </div>
       <div class="half right">
         <ion-card-header>
           <ion-card-subtitle>{{this.usuario.age}}</ion-card-subtitle>
           <ion-card-title style="color:#FEBD59">{{this.usuario.name}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          {{this.usuario.summary}}  
+          <p>{{this.usuario.summary1}}</p>
+          <p>{{this.usuario.summary2}}</p>
+          <p>{{this.usuario.summary3}}</p>
+          <p>{{this.usuario.summary4}}</p>
+          <p>{{this.usuario.summary5}}</p>
         </ion-card-content>
       </div>
     </div>
@@ -39,7 +45,7 @@
     <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
       <div>
         <ion-icon name="{{this.usuario.iconconcept1}}" style="font-size: 16px;"></ion-icon>
-        <ion-label style="margin-left: 20px;">{{this.usuario.concept1}}</ion-label>
+        <ion-label style="margin-left: 20px;" class="titulos">{{this.usuario.concept1}}</ion-label>
       </div>
       
     </ion-card-header>
@@ -87,7 +93,7 @@
     <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
       <div>
         <ion-icon name="{{this.usuario.iconconcept2}}" style="font-size: 16px;"></ion-icon>
-        <ion-label style="margin-left: 20px;">{{this.usuario.concept2}}</ion-label>
+        <ion-label style="margin-left: 20px;" class="titulos">{{this.usuario.concept2}}</ion-label>
       </div>
     </ion-card-header>
     
@@ -128,7 +134,7 @@
     <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
       <div>
         <ion-icon name="{{this.usuario.iconconcept3}}" style="font-size: 16px;"></ion-icon>
-        <ion-label style="margin-left: 20px;">{{this.usuario.concept3}}</ion-label>
+        <ion-label style="margin-left: 20px;" class="titulos">{{this.usuario.concept3}}</ion-label>
       </div>
     </ion-card-header>
     
@@ -190,7 +196,7 @@
     <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
       <div>
         <ion-icon name="{{this.usuario.iconconcept4}}" style="font-size: 16px;"></ion-icon>
-        <ion-label style="margin-left: 20px;">{{this.usuario.concept4}}</ion-label>
+        <ion-label style="margin-left: 20px;" class="titulos"> {{this.usuario.concept4}}</ion-label>
       </div>
     </ion-card-header>
     

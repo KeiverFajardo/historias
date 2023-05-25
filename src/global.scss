@@ -25,6 +25,8 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 
 @font-face {
     font-family: 'Forum';
@@ -32,5 +34,9 @@
   }
 
   *, body {
-    font-family: 'Forum', sans-serif;
+    font-family: 'Forum', 'Roboto' ,sans-serif;
+  }
+
+  .titulos {
+    font-family: 'Roboto', sans-serif !important;
   }
