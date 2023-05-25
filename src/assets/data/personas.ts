@@ -42,7 +42,7 @@ export const personas = [
         "trabajo2":"https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/Trabajo2M.jpg",
         "trabajo3":"https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/Trabajo3M.jpg",
         "trabajo4":"https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/Trabajo4M.jpg",
-        "trabajo5":"https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/Trabajo5M.jpg",
+        "trabajo5":"https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/trabajo5M.jpg",
         "photo12":"https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b12.jpg",
         "photo13":"https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b13.jpg",
         "photo14":"https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b14.jpg",
