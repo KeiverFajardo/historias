@@ -1,19 +1,41 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MenuController, NavController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 import { Componente } from 'src/app/interfaces/interfaces';
 import { DataService } from 'src/app/services/data.service';
 import { personas } from 'src/assets/data/personas';
 import Swiper from 'swiper';
+import { IonicSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
-export class HomePage implements OnInit, AfterViewInit {
+export class HomePage {
 
-  slideOpts = {
+  images: string[] = [
+    'https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b2.jpg',
+    'https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b3.jpg',
+    'https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b4.jpg',
+  ];
+  currentIndex = 0;
+
+  ngOnInit() {
+    setInterval(() => {
+      this.nextSlide();
+    }, 1000);
+  }
+
+  nextSlide() {
+    this.currentIndex++;
+    if (this.currentIndex === this.images.length) {
+      this.currentIndex = 0;
+    }
+  }
+
+
+  /* slideOpts = {
     initialSlide: 0,
     speed: 400,
     slidesPerView: 1,
@@ -63,7 +85,7 @@ export class HomePage implements OnInit, AfterViewInit {
 
   mostrarMenu() {
     this.menuCtrl.open('first');
-  }
+  } */
 
 }
 

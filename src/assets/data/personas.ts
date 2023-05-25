@@ -60,8 +60,8 @@ export const personas = [
     },
     {
         "id":"2",
-        "name":"Brek Pita", 
-        "age":"29 años", 
+        "name":"Breck Pita", 
+        "age":"47 años", 
         "avatar":"https://raw.githubusercontent.com/KeiverFajardo/infoTecnology/version3/media/b4.jpg",
         "summary": "Hombre de 47 años. Caracas, Venezuela. Barista. Emprendedor. Interés por la gastronomía",
         "history1": "Nací en Caracas, Venezuela, en una familia pequeña pero de grandes valores. Tengo dos hermanos, uno que continúa en Venezuela con mi madre y otro que vive en Uruguay con sus tres hijos y su esposa. Mi infancia fue tranquila, me gustaba jugar con los varones al trompo, las metras y el papagayo que son juegos tradicionales venezolanos de esa época. Disfrutaba andar en bici, saltar, subirme a los árboles y explorar la naturaleza. Desde aproximadamente los cinco años ya sabía que me sentía distinto a los demás, no sabía explicarlo en su momento, pero si algo tenía claro es que yo no podía encasillarme en una categoría. No sabía como expresar esto que me acontecía, el explicarle a mi familia que no era “normal” no fue sencillo, yo no podía pedirle al Niño Jesús o a Santa que me trajera un pene.",

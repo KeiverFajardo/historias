@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { MenuController, NavController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 import { Componente } from 'src/app/interfaces/interfaces';
 import { DataService } from 'src/app/services/data.service';
@@ -16,7 +16,8 @@ export class HeaderComponent {
   componentes?: Observable<Componente[]>;
 
   constructor( private menuCtrl: MenuController,
-              private dataService: DataService) { }
+              private dataService: DataService,
+              private navCtrl: NavController) { }
 
 
   ngOnInit() {
@@ -25,6 +26,10 @@ export class HeaderComponent {
             
   mostrarMenu() {
     this.menuCtrl.open('first');
+  }
+
+  onClick(){
+    this.navCtrl.navigateRoot('/menu');
   }
 
 }

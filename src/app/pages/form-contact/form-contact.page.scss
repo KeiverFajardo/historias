@@ -25,17 +25,17 @@ ion-textarea {
 ion-grid{
   background-color: rgb(51, 50, 50);
   color: aliceblue;
-  width: 100%;
-  height:70%;
+  width: auto;
+  height: auto;
 }
-
+/* 
 
 app-footer {
   position: fixed;
   bottom: 0;
-  height:30%;
-  width: 100%;
-}
+  width: auto;
+  height: auto;
+} */
 
 ion-label{
   color: aliceblue;

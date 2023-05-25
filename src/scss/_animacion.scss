@@ -1,0 +1,20 @@
+/* Animacion */
+
+.agrandar {
+	transform: scale(1, 1);
+
+    &:hover {
+        transform: scale(1.5, 1.5);
+    }
+} 
+
+.aparecer {
+	animation-duration: 1.5s;
+	animation-name: aparece;
+	animation-iteration-count: infinite;
+}
+
+img {
+	margin: solid 1px black;
+	transform: rotate(360deg);
+}
