@@ -94,11 +94,23 @@
     <ion-card-content>
       <div class="swiper-container carrusel-2">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.amor1}}">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.amor2}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.identidad1}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.identidad2}}">
+          </div>
+        <!--   <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.Identidad3}}">
+          </div> -->
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.identidad4}}">
           </div>
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
@@ -124,20 +136,44 @@
       <!-- {{this.usuario.description3}} -->
       <div class="swiper-container carrusel-3">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.trabajo1}}">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.trabajo2}}">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.trabajo3}}">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.trabajo4}}">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngIf="this.id == 1">
             <img src="{{this.usuario.trabajo5}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo1}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo2}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo3}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo4}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo5}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo6}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo7}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.trabajo8}}">
           </div>
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
@@ -150,7 +186,7 @@
     <!-- <img src="{{this.usuario.photo3}}"> -->
   </ion-card>
 
-  <ion-card>
+  <ion-card  *ngIf="this.id == 2">
     <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
       <div>
         <ion-icon name="{{this.usuario.iconconcept4}}" style="font-size: 16px;"></ion-icon>
@@ -161,20 +197,17 @@
     <ion-card-content>
       <div class="swiper-container carrusel-4">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo16}}">
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.migracion1}}">
           </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo17}}">
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.migracion2}}">
           </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo18}}">
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.migracion3}}">
           </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo19}}">
-          </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo20}}">
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.migracion4}}">
           </div>
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
