@@ -50,20 +50,23 @@
     <ion-card-content>
       <div class="swiper-container carrusel-1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo1}}">
+          <div class="swiper-slide" *ngIf="this.id == 1">
+            <img src="{{this.usuario.familia1}}">
           </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo2}}">
+          <div class="swiper-slide" *ngIf="this.id == 1">
+            <img src="{{this.usuario.familia2}}">
           </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo3}}">
+          <div class="swiper-slide" *ngIf="this.id == 1">
+            <img src="{{this.usuario.familia3}}">
           </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo4}}">
+          <div class="swiper-slide" *ngIf="this.id == 1">
+            <img src="{{this.usuario.familia4}}">
           </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo5}}">
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.familia1}}">
+          </div>
+          <div class="swiper-slide" *ngIf="this.id == 2">
+            <img src="{{this.usuario.familia2}}">
           </div>
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
@@ -74,6 +77,7 @@
       </div>
       <!-- {{this.usuario.description1}} -->
     </ion-card-content>
+
     
 
 
@@ -91,19 +95,10 @@
       <div class="swiper-container carrusel-2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo6}}">
+            <img src="{{this.usuario.amor1}}">
           </div>
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo7}}">
-          </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo8}}">
-          </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo9}}">
-          </div>
-          <div class="swiper-slide">
-            <img src="{{this.usuario.photo10}}">
+            <img src="{{this.usuario.amor2}}">
           </div>
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
@@ -130,19 +125,19 @@
       <div class="swiper-container carrusel-3">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo11}}">
+            <img src="{{this.usuario.trabajo1}}">
           </div>
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo12}}">
+            <img src="{{this.usuario.trabajo2}}">
           </div>
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo13}}">
+            <img src="{{this.usuario.trabajo3}}">
           </div>
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo16}}">
+            <img src="{{this.usuario.trabajo4}}">
           </div>
           <div class="swiper-slide">
-            <img src="{{this.usuario.photo15}}">
+            <img src="{{this.usuario.trabajo5}}">
           </div>
           <!-- Agrega más divs con clase "swiper-slide" y las imágenes que desees -->
           
