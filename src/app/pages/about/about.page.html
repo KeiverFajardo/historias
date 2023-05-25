@@ -3,18 +3,26 @@
 <ion-content >
   <ion-grid >
       <ion-list-header>
-        <ion-label class="ion-text-center">Nosotros somos UDELAR</ion-label>
+        <ion-label class="ion-text-center" style="color:#FEBD59">HISTORIAS REALES SOBRE PERSONAS REALES</ion-label>
       </ion-list-header>
+
+      <ion-card>
+        <ion-card-content>
+          <p class="justified-text">“Nuestro proyecto es una alianza educativa entre la Facultad de Comunicación (FIC) y la Facultad de Ingeniería (FING) de la Universidad de la República (UdelaR). Proviene de la materia Diseño de interacción en la cual nos desafiamos a realizar un proyecto de interacción que uniera la comunicación con la ingeniería. </p><br>
+          <p class="justified-text">Historias reales sobre personas reales busca darle visualización social a las historias de personas de la cotidianeidad que no tienen los medios para ser escuchados. Buscamos generar la escucha activa, la interacción usuario - dispositivo, generar empatía y mantener presente el factor sorpresa que cada historia tiene. </p><br>
+          <p class="justified-text">En principio el proyecto es un MVP que cuenta con dos historias, en un futuro aspiramos a seguir agregando historias que aporten y enriquezcan el objetivo de nuestro proyecto.”</p><br>
+        </ion-card-content>
+      </ion-card>
       
-      <img src="https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/facu_udelar.png">
+     <!--  <img src="https://raw.githubusercontent.com/KeiverFajardo/historias/main/src/assets/facu_udelar.png">
       
 
       <ion-list-header>
-        <ion-label>¿Necesitas ayuda?</ion-label>
+        <ion-label style="color:rgb(227, 177, 50)">¿Necesitas ayuda?</ion-label>
       </ion-list-header>
         <ion-label class="my-item">Estos son los medios por los cuales te puedes comunicar con nosotros:</ion-label>
       <ion-list-header>
-        <ion-label>Medios de contacto</ion-label>
+        <ion-label style="color:rgb(227, 177, 50)">Medios de contacto</ion-label>
         
       </ion-list-header>
       <ion-chip color="dark" mode="ios" outline="true" (click)="onClick()">
@@ -32,7 +40,7 @@
       
 
       <ion-list-header>
-        <ion-label>Redes Sociales</ion-label>
+        <ion-label style="color:rgb(227, 177, 50)">Redes Sociales</ion-label>
       </ion-list-header>
       <ion-chip color="dark" mode="ios" outline="true" (click)="onClick()">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -45,10 +53,10 @@
       <ion-chip color="dark" mode="ios" outline="true" (click)="onClick()">
         <ion-icon name="logo-linkedin"></ion-icon>
         <ion-label>Linkedin</ion-label>
-      </ion-chip>
+      </ion-chip> -->
 
       <ion-list-header>
-        <ion-label>Nosotros</ion-label>
+        <ion-label style="text-align: center;">Nosotros</ion-label>
       </ion-list-header>
 
       <ion-card-content>
@@ -65,9 +73,11 @@
                     </ion-col>
                     <ion-col size="7">
                       <ion-card-header >
-                        <ion-card-title class="custom-header">Isabella Meza</ion-card-title>
-                        <ion-card-subtitle>Comunicación organizacional</ion-card-subtitle>
+                        
                         <ion-label>FIC Udelar</ion-label>
+                        <ion-label>Comunicación organizacional</ion-label>
+                        <b><ion-label class="custom-header">Isabella Meza</ion-label></b>
+                        
                       </ion-card-header>
                     </ion-col>
                     
@@ -86,10 +96,9 @@
                     </ion-col>
                     <ion-col size="7">
                       <ion-card-header >
-                  
-                        <ion-card-title class="custom-header">Keiver Fajardo</ion-card-title>
-                        <ion-card-subtitle>Ingeniería en Computación</ion-card-subtitle>
                         <ion-label>FING Udelar</ion-label>
+                        <ion-label>Ingeniería en Computación</ion-label>
+                        <b><ion-label class="custom-header">Keiver Fajardo</ion-label></b>
                       </ion-card-header>
                     </ion-col>
                     
@@ -108,10 +117,9 @@
                     </ion-col>
                     <ion-col size="7">
                       <ion-card-header >
-                  
-                        <ion-card-title class="custom-header">Dubraska Tovar</ion-card-title>
-                        <ion-card-subtitle>Comunicación publicitaria</ion-card-subtitle>
                         <ion-label>FIC Udelar</ion-label>
+                        <ion-label>Comunicación publicitaria</ion-label>
+                        <b><ion-label class="custom-header">Dubraska Tovar</ion-label></b>
                       </ion-card-header>
                     </ion-col>
                     
@@ -131,10 +139,9 @@
                     </ion-col>
                     <ion-col size="7">
                       <ion-card-header >
-                  
-                        <ion-card-title class="custom-header">Facundo Lema</ion-card-title>
-                        <ion-card-subtitle>Ingenieria en sistemas</ion-card-subtitle>
                         <ion-label>FING Udelar</ion-label>
+                        <ion-label>Ingeniería en sistemas</ion-label>
+                        <b><ion-label class="custom-header">Facundo Lema</ion-label></b>
                       </ion-card-header>
                     </ion-col>
                     
@@ -154,10 +161,9 @@
                     </ion-col>
                     <ion-col size="7">
                       <ion-card-header >
-                  
-                        <ion-card-title class="custom-header">Azul Milano</ion-card-title>
-                        <ion-card-subtitle>Comunicación multimedia & TI</ion-card-subtitle>
                         <ion-label>FIC Udelar</ion-label>
+                        <ion-label>Comunicación multimedia & TI</ion-label>
+                        <b><ion-label class="custom-header">Azul Milano</ion-label></b>
                       </ion-card-header>
                     </ion-col>
                     
@@ -177,10 +183,9 @@
                     </ion-col>
                     <ion-col size="7">
                       <ion-card-header >
-                  
-                        <ion-card-title class="custom-header">Micaela Percovich</ion-card-title>
-                        <ion-card-subtitle>Ingeniería en Computación</ion-card-subtitle>
                         <ion-label>FING Udelar</ion-label>
+                        <ion-label>Ingeniería en Computación</ion-label>
+                        <b><ion-label class="custom-header">Micaela Percovich</ion-label></b>
                       </ion-card-header>
                     </ion-col>
                     

@@ -19,7 +19,7 @@ export class MenuPage implements OnInit {
   }
 
   onClick(){
-    this.navCtrl.navigateRoot('/');
+    this.navCtrl.navigateRoot('/home');
   }
 
 }

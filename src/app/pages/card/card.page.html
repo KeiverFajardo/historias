@@ -9,7 +9,7 @@
       <div class="half right">
         <ion-card-header>
           <ion-card-subtitle>{{this.usuario.age}}</ion-card-subtitle>
-          <ion-card-title style="color:rgb(221, 221, 48)">{{this.usuario.name}}</ion-card-title>
+          <ion-card-title style="color:#FEBD59">{{this.usuario.name}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
           {{this.usuario.summary}}  
@@ -36,10 +36,16 @@
   </ion-card>
     
   <ion-card>
-    <ion-item color="{{this.usuario.colorconcept1}}">
-      <ion-icon slot="start" name="{{this.usuario.iconconcept1}}"></ion-icon>
-      <ion-label>{{this.usuario.concept1}}</ion-label>
-    </ion-item>
+    <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
+      <div>
+        <ion-icon name="{{this.usuario.iconconcept1}}" style="font-size: 16px;"></ion-icon>
+        <ion-label style="margin-left: 20px;">{{this.usuario.concept1}}</ion-label>
+      </div>
+      
+    </ion-card-header>
+    <!-- <ion-item style="background-color:#FEBD59 !important; color: #FEBD59;">
+      
+    </ion-item> -->
     
     <ion-card-content>
       <div class="swiper-container carrusel-1">
@@ -74,10 +80,12 @@
   </ion-card>
 
   <ion-card>
-    <ion-item color="{{this.usuario.colorconcept2}}">
-      <ion-icon slot="start" name="{{this.usuario.iconconcept2}}"></ion-icon>
-      <ion-label>{{this.usuario.concept2}}</ion-label>
-    </ion-item>
+    <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
+      <div>
+        <ion-icon name="{{this.usuario.iconconcept2}}" style="font-size: 16px;"></ion-icon>
+        <ion-label style="margin-left: 20px;">{{this.usuario.concept2}}</ion-label>
+      </div>
+    </ion-card-header>
     
     <ion-card-content>
       <div class="swiper-container carrusel-2">
@@ -110,10 +118,12 @@
   </ion-card>
 
   <ion-card>
-    <ion-item color="{{this.usuario.colorconcept3}}">
-      <ion-icon slot="start" name="{{this.usuario.iconconcept3}}"></ion-icon>
-      <ion-label>{{this.usuario.concept3}}</ion-label>
-    </ion-item>
+    <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
+      <div>
+        <ion-icon name="{{this.usuario.iconconcept3}}" style="font-size: 16px;"></ion-icon>
+        <ion-label style="margin-left: 20px;">{{this.usuario.concept3}}</ion-label>
+      </div>
+    </ion-card-header>
     
     <ion-card-content>
       <!-- {{this.usuario.description3}} -->
@@ -146,10 +156,12 @@
   </ion-card>
 
   <ion-card>
-    <ion-item color="{{this.usuario.colorconcept4}}">
-      <ion-icon slot="start" name="{{this.usuario.iconconcept4}}"></ion-icon>
-      <ion-label>{{this.usuario.concept4}}</ion-label>
-    </ion-item>
+    <ion-card-header style="color:#ffffff; background-color: #FEBD59;">
+      <div>
+        <ion-icon name="{{this.usuario.iconconcept4}}" style="font-size: 16px;"></ion-icon>
+        <ion-label style="margin-left: 20px;">{{this.usuario.concept4}}</ion-label>
+      </div>
+    </ion-card-header>
     
     <ion-card-content>
       <div class="swiper-container carrusel-4">

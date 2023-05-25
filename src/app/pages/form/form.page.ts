@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, NavController } from '@ionic/angular';
+import { menu } from 'docs/assets/data/menu';
+import { Componente } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-form',
@@ -8,7 +10,20 @@ import { AlertController, NavController } from '@ionic/angular';
 })
 export class FormPage implements OnInit {
 
-  constructor( private alertCtrl: AlertController,
+  componentes?: Componente[];
+
+  constructor(private navCtrl: NavController ) { }
+
+  ngOnInit() {
+    this.componentes = menu;
+  }
+
+  onClick(){
+    this.navCtrl.navigateRoot('/');
+  }
+
+
+  /* constructor( private alertCtrl: AlertController,
               private navCtrl: NavController ) { }
 
   ngOnInit() {
@@ -41,7 +56,7 @@ export class FormPage implements OnInit {
     });
 
     await alert.present();
-  }
+  } */
 
 
 }

@@ -14,11 +14,23 @@
     color: white;
   }
 
+  ion-grid, ion-card, ion-card-content, p{
+    background-color: rgb(51, 50, 50);
+    color: aliceblue;
+    width: auto;
+    height: auto;
+  }
+
+  .justified-text {
+    text-align: justify;
+  }
+
   ion-grid, ion-item, ion-card-header, ion-card-title, ion-card-subtitle, .carrusel-1-next, .carrusel-1-prev, div.swiper-slide{
     background-color: rgb(51, 50, 50);
     color: aliceblue;
     width: auto;
     height: auto;
+    font-size: 12px;
   }
   
 

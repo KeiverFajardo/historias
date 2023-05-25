@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .yellow-button {
+    background-color: #FEBD59; /* Fondo amarillo */
+    border: 2px solid #FEBD59; /* Borde amarillo */
+  }
+  
