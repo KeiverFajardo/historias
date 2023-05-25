@@ -11,6 +11,8 @@ import { personas } from 'src/assets/data/personas';
 export class CardPage implements OnInit, AfterViewInit  {
 
   ngAfterViewInit() {
+
+    
     const swiper1 = new Swiper('.carrusel-1', {
       navigation: {
         nextEl: '.carrusel-1-next',

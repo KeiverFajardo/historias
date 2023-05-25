@@ -18,7 +18,7 @@ export class FormPage implements OnInit {
     this.componentes = menu;
   }
 
-  onClick(){
+  onClick(){ 
     this.navCtrl.navigateRoot('/');
   }
 
