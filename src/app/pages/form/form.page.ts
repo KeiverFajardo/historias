@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, NavController } from '@ionic/angular';
-import { menu } from 'docs/assets/data/menu';
 import { Componente } from 'src/app/interfaces/interfaces';
+import { menu } from 'src/assets/data/menu';
 
 @Component({
   selector: 'app-form',
