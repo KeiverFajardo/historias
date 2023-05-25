@@ -5,18 +5,18 @@
     <ion-grid >
       <ion-card mode="md" *ngFor="let usuario of usuarios" (click)="onClick(usuario)">
         <div class="container" style="padding: 20px 0 20px;">
-          <div class="half left containerR"><img src="{{this.usuario.avatar}}"></div>
+          <div class="half left"><img src="{{this.usuario.avatar}}"></div>
           <div class="half right">
             <ion-card-header>
               <ion-card-subtitle>{{this.usuario.age}}</ion-card-subtitle>
               <ion-card-title class="titulos" style="color:#FEBD59">{{this.usuario.name}}</ion-card-title>
             </ion-card-header>
             <ion-card-content style="text-align: justify;">
-              <p>{{this.usuario.summary1}}</p>
-              <p>{{this.usuario.summary2}}</p>
-              <p>{{this.usuario.summary3}}</p>
-              <p>{{this.usuario.summary4}}</p>
-              <p>{{this.usuario.summary5}}</p>
+              <p style="font-size: 12px;">{{this.usuario.summary1}}</p>
+              <p style="font-size: 12px;">{{this.usuario.summary2}}</p>
+              <p style="font-size: 12px;">{{this.usuario.summary3}}</p>
+              <p style="font-size: 12px;">{{this.usuario.summary4}}</p>
+              <p style="font-size: 12px;">{{this.usuario.summary5}}</p>
             </ion-card-content>
             <ion-chip (click)="onClick(usuario)" mode="ios" outline="true" style="background-color: #FEBD59; text-align: center;">
               <ion-label style="color:white">Conoceme</ion-label> 
