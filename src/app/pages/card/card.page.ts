@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 import { personas } from 'src/assets/data/personas';
 
 @Component({
-  selector: 'app-card',
+  selector: 'app-card',  
   templateUrl: './card.page.html',
   styleUrls: ['./card.page.scss'],
 })
