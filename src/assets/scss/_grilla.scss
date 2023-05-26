@@ -1,0 +1,147 @@
+
+ /*Grids*/
+
+ #grilla {
+    display: grid;
+    grid-template-areas:  
+    "Datos Datos2 Datos3"
+    "Datos Datos4 Datos5";
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+	height: auto;
+}
+
+#grillaContactanos {
+    display: grid;
+    grid-template-areas:  
+    "Datos Datos2";
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+	height: 700PX;
+    grid-column: auto;
+}
+
+#grilla2{
+    display: grid;
+    grid-template-areas: 
+    "Producto1 Producto2 Producto3"
+    "Producto4 Producto5 Producto6"   
+    "Datos Datos2 Datos3"
+    "Datos Datos4 Datos5";
+    grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: 15px;
+    grid-row-gap: px;
+	height: auto;
+}
+
+#grillaPolitica{
+    display: grid;
+    grid-template-areas:  
+    "Datos Datos2 Datos2"
+    "Datos Datos5 Datos4"
+	"Datos Datos6 Datos4";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+	height: 50% ;
+
+}
+
+.grilla__img {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin: auto;
+
+} 
+
+.prueba {
+	margin-top: 3em;
+	border: 1px solid black;
+    background: #d69090;
+	padding: 0 50px 20px 50px;
+	margin: 0 50px 20px 50px;
+}
+.border {
+ 
+}
+
+@mixin productos {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#Productos {
+	grid-area: Productos;
+}
+
+.Producto1 {
+	grid-area: Producto1;
+	@include productos;
+}
+
+.Producto2 {
+	grid-area: Producto2;
+	@include productos;
+}
+
+.Producto3 {
+	grid-area: Producto3;
+	@include productos;
+}
+
+.Producto4 {
+	grid-area: Producto4;
+	@include productos;
+}
+
+.Producto5 {
+	grid-area: Producto5;
+	@include productos;
+}
+
+.Producto6 {
+	grid-area: Producto6;
+	@include productos;
+}
+
+.Datos {
+	grid-area: Datos;
+}
+
+.Datos2 {
+	grid-area: Datos2;
+}
+
+.Datos3 {
+	grid-area: Datos3;
+}
+.Datos4 {
+	grid-area: Datos4;
+}
+.Datos5 {
+	grid-area: Datos5;
+}
+
+.Datos6 {
+	grid-area: Datos6;
+}
+
+
+.grid-item {
+    background: pink;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 1em;
+}
+
+h1 {
+    text-align: center;
+}
